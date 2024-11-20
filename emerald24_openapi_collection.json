@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "Emerald24 - API",
-    "version": "TEST"
+    "version": ""
   },
   "servers": [
     {
