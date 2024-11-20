@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Emerald24 - API",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "<ul><li>Lorem Ipsum</li> <li>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</li> industry's standard dummy text ever since the 1500s, <strong>when an unknow</strong> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</ul>",
     "version": "1.0.0"
   },
   "servers": [
@@ -12,7 +12,8 @@
   ],
   "tags": [
     {
-      "name": "Payments"
+      "name": "Payments",
+      "description": "asdadasdadasdasdasdasdasd asdasd adadada adadad a f h h j ajdja jdjsjajdajdja asjj j"
     }
   ],
   "paths": {
