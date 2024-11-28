@@ -2,22 +2,20 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Emerald24 - API",
-    "description": "<ul><li>Lorem Ipsum</li> <li>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</li> industry's standard dummy text ever since the 1500s, <strong>when an unknow</strong> printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</ul>",
     "version": "1.0.0",
     "x-logo": {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-IdkPkvTqpEnAHO-b6LXSEIWqAkv_L11fA&s",
-      altText: "Emerald24 Logo",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-IdkPkvTqpEnAHO-b6LXSEIWqAkv_L11fA&s",
+      "altText": "Emerald24 Logo"
     }
   },
   "servers": [
     {
       "url": "https://emerald24.co.uk"
-    },
+    }
   ],
   "tags": [
     {
-      "name": "Payments",
-      "description": "asdadasdadasdasdasdasdasd asdasd adadada adadad a f h h j ajdja jdjsjajdajdja asjj j"
+      "name": "Payments"
     }
   ],
   "paths": {
@@ -42,7 +40,7 @@
             "schema": {
               "type": "string"
             },
-            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTczMDI1NjA1NjAzOTF9.QsJzM_5B7It50v1-vFcFyK_yVH1Zv9zuU-YsiWTLPUg"
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTczMTM3NTIwOTk5MjF9.FHvRIfg6Ah8ZUtCV73jlUM3z8duDy5X9Vi5f7jHkX9o"
           },
           {
             "name": "Cookie",
@@ -50,7 +48,7 @@
             "schema": {
               "type": "string"
             },
-            "example": "JSESSIONID=TqzLWlYuTvHrWU-9tPwMqL4hsfytNM3fj-ykdyvZ.emerdevpcore"
+            "example": "JSESSIONID=FjnuJWITs5agWYh9C0Q2juhIXC6S7VjyahjTAkLP.emerdevpcore"
           }
         ],
         "responses": {
@@ -66,7 +64,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Tue, 12 Nov 2024 01:51:39 GMT"
+                  "example": "Wed, 27 Nov 2024 09:11:08 GMT"
                 }
               },
               "Content-Type": {
@@ -95,7 +93,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -107,14 +105,14 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
               "Set-Cookie": {
                 "schema": {
                   "type": "string",
-                  "example": "JSESSIONID=HjTOXI92TyfRz8V2xRFCcoI8yf5mbUrSrxbVfLV3.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT"
+                  "example": "JSESSIONID=UkzwIDmzE-f2wOehzTnYZYrDzThry67VaqE6Hu5h.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT"
                 }
               },
               "Pragma": {
@@ -126,7 +124,7 @@
               "X-CSRF-Token": {
                 "schema": {
                   "type": "string",
-                  "example": "75AD80FAB207144044AF45CC9CB1E4A1FF075A62"
+                  "example": "1B41816FED51E60F6DD69D40B8F4BEDDC13CFBA1"
                 }
               },
               "Strict-Transport-Security": {
@@ -159,7 +157,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "example": "<?xml version = '1.0' encoding = 'UTF-8'?>\n<response result=\"true\" level=\"0\">\n    <hmdcustomer id=\"17181767951311\"/>\n    <doc type=\"SAAS_LETTER\" sender_cust=\"17181767951311\" id=\"FADO11120000048\" class=\"saas\" storage=\"1\" sender_user=\"17181769051161\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1731376294691\"/>\n    <signer>\n        <displayPin>4895</displayPin>\n        <reference>17313762948451</reference>\n        <expiresIn>180</expiresIn>\n        <qrCode>signer.document.commit|4895|17313762948451|180|1731376474845|FADO11120000048</qrCode>\n    </signer>\n</response>"
+                "example": "<?xml version = '1.0' encoding = 'UTF-8'?>\n<response result=\"true\" level=\"0\">\n    <hmdcustomer id=\"17181767951311\"/>\n    <doc type=\"SAAS_LETTER\" sender_cust=\"17181767951311\" id=\"FAD241127000057\" class=\"saas\" storage=\"1\" sender_user=\"17181769051161\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1732698659293\"/>\n    <signer>\n        <displayPin>7328</displayPin>\n        <reference>17326986594921</reference>\n        <expiresIn>180</expiresIn>\n        <qrCode>signer.document.commit|7328|17326986594921|180|1732698839492|FAD241127000057</qrCode>\n    </signer>\n</response>"
               }
             }
           }
@@ -169,7 +167,7 @@
         "tags": [
           "default"
         ],
-        "summary": "Payment SAAS  for Letter",
+        "summary": "Letter U-B",
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -177,11 +175,7 @@
                 "properties": {
                   "document.type": {
                     "type": "string",
-                    "example": "SAAS_LETTER"
-                  },
-                  "document.field[name=saas_payment]": {
-                    "type": "string",
-                    "example": "FADO01270000042"
+                    "example": "letter_customer"
                   },
                   "document.field[name=partner_id]": {
                     "type": "integer",
@@ -189,7 +183,7 @@
                   },
                   "document.field[name=user_id]": {
                     "type": "integer",
-                    "example": "17174804600201"
+                    "example": "17181769051161"
                   },
                   "document.field[name=subject]": {
                     "type": "string",
@@ -203,21 +197,21 @@
                     "type": "string",
                     "example": "personal_banker"
                   },
-                  "document.field[name=email]": {
-                    "type": "string",
-                    "example": "olesia.denysenko+04512@geniusto.co.uk"
-                  },
-                  "document.field[name=mobile]": {
-                    "type": "number",
-                    "example": "+380505199409"
-                  },
                   "customer.id": {
                     "type": "integer",
-                    "example": "17174804561581"
+                    "example": "17181767951311"
                   },
                   "request.channel": {
                     "type": "string",
                     "example": "external"
+                  },
+                  "document.field[name=saas_payment]": {
+                    "type": "string",
+                    "example": "FAD241127000057"
+                  },
+                  "user.id": {
+                    "type": "integer",
+                    "example": "17181769051161"
                   }
                 }
               }
@@ -239,15 +233,15 @@
             "schema": {
               "type": "string"
             },
-            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyNTUwOTQzNTE5MzF9.7rdiWoXNSkftHZsDDiPl2qhHaPsoBYGZOOt01JTQV2I"
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTczMjY5NTc4MDU2NzF9.zArAcgHCZoIkIGN5MswHyjk0MzHkmA01-hZtoOHJiOs"
           },
           {
-            "name": "Content-Type",
+            "name": "Cookie",
             "in": "header",
             "schema": {
               "type": "string"
             },
-            "example": "application/xml"
+            "example": "JSESSIONID=FjnuJWITs5agWYh9C0Q2juhIXC6S7VjyahjTAkLP.emerdevpcore"
           }
         ],
         "responses": {
@@ -263,7 +257,7 @@
               "Date": {
                 "schema": {
                   "type": "string",
-                  "example": "Thu, 05 Sep 2024 07:47:53 GMT"
+                  "example": "Wed, 27 Nov 2024 09:11:41 GMT"
                 }
               },
               "Content-Type": {
@@ -275,7 +269,7 @@
               "Content-Length": {
                 "schema": {
                   "type": "integer",
-                  "example": "336"
+                  "example": "285"
                 }
               },
               "Connection": {
@@ -292,7 +286,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -304,14 +298,14 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
               "Set-Cookie": {
                 "schema": {
                   "type": "string",
-                  "example": "JSESSIONID=gkG62TLIS6nNHPZBroL1Z7RhO-9SnX-QxwZQhKBY.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT"
+                  "example": "JSESSIONID=h1iT-f33b5llUaL8BAtN1w0umiMG_nr22zaCf_dg.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT"
                 }
               },
               "Pragma": {
@@ -323,7 +317,7 @@
               "X-CSRF-Token": {
                 "schema": {
                   "type": "string",
-                  "example": "2F1B7A08DFA68B87DCBF867852630E18A6F4B288"
+                  "example": "A79903EC97C250DBC623C51B7FA141F81F3D75E7"
                 }
               },
               "Strict-Transport-Security": {
@@ -356,7 +350,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "example": "<?xml version = '1.0' encoding = 'UTF-8'?>\n<response result=\"true\" level=\"0\">\n    <hmdcustomer id=\"17174804561581\"/>\n    <doc type=\"SAAS_LETTER\" sender_cust=\"17174804561581\" id=\"FADO09050000063\" class=\"saas\" storage=\"1\" sender_user=\"17174804600201\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725522466112\"/>\n    <signer>\n        <displayPin>5677</displayPin>\n        <reference>17255224663231</reference>\n        <expiresIn>180</expiresIn>\n        <qrCode>signer.document.commit|5677|17255224663231|180|1725522646323|FADO09050000063</qrCode>\n    </signer>\n</response>"
+                "example": "<?xml version = '1.0' encoding = 'UTF-8'?>\n<response result=\"true\" level=\"0\">\n    <hmdcustomer id=\"17181767951311\"/>\n    <doc type=\"letter_customer\" sender_user=\"17181769051161\" sender_cust=\"17181767951311\" id=\"FAD241127000058\" class=\"letter\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1732698700984\"/>\n    <doc type=\"letter_customer\" sender_user=\"SYSTEM\" sender_cust=\"17181767951311\" id=\"FAD241127000058\" class=\"letter\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1732698701633\" paymentid=\"17326987008171\"/>\n</response>"
               }
             }
           }
@@ -420,7 +414,7 @@
                     "example": "7"
                   },
                   "document.field[name=value_date]": {
-                    "type": "string",
+                    "type": "number",
                     "description": "Value date.\n\nFormat: YYYY.MM.DD",
                     "example": "2024.03.17"
                   },
@@ -575,7 +569,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -587,7 +581,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -716,7 +710,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -728,7 +722,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -785,202 +779,9 @@
             }
           }
         }
-      },
-      "post": {
-        "tags": [
-          "default"
-        ],
-        "summary": "Letter U-B Copy",
-        "requestBody": {
-          "content": {
-            "application/x-www-form-urlencoded": {
-              "schema": {
-                "properties": {
-                  "document.type": {
-                    "type": "string",
-                    "example": "letter_customer"
-                  },
-                  "document.field[name=partner_id]": {
-                    "type": "integer",
-                    "example": "17096833300941"
-                  },
-                  "document.field[name=user_id]": {
-                    "type": "integer",
-                    "example": "17181769051161"
-                  },
-                  "document.field[name=subject]": {
-                    "type": "string",
-                    "example": "API letter"
-                  },
-                  "document.field[name=body]": {
-                    "type": "string",
-                    "example": "from User to PB"
-                  },
-                  "document.field[name=receiver]": {
-                    "type": "string",
-                    "example": "personal_banker"
-                  },
-                  "customer.id": {
-                    "type": "integer",
-                    "example": "17181767951311"
-                  },
-                  "request.channel": {
-                    "type": "string",
-                    "example": "external"
-                  },
-                  "document.field[name=saas_payment]": {
-                    "type": "string",
-                    "example": "FADO11120000048"
-                  },
-                  "document.sender_user": {
-                    "type": "string",
-                    "example": "denysenko"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "TPP-Registration-Number",
-            "in": "header",
-            "schema": {
-              "type": "integer"
-            },
-            "example": "17096833300941"
-          },
-          {
-            "name": "TPP-Client-Access",
-            "in": "header",
-            "schema": {
-              "type": "string"
-            },
-            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTczMTM3NTIwOTk5MjF9.FHvRIfg6Ah8ZUtCV73jlUM3z8duDy5X9Vi5f7jHkX9o"
-          },
-          {
-            "name": "Cookie",
-            "in": "header",
-            "schema": {
-              "type": "string"
-            },
-            "example": "JSESSIONID=HjTOXI92TyfRz8V2xRFCcoI8yf5mbUrSrxbVfLV3.emerdevpcore"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "headers": {
-              "Server": {
-                "schema": {
-                  "type": "string",
-                  "example": "nginx"
-                }
-              },
-              "Date": {
-                "schema": {
-                  "type": "string",
-                  "example": "Tue, 12 Nov 2024 01:52:12 GMT"
-                }
-              },
-              "Content-Type": {
-                "schema": {
-                  "type": "string",
-                  "example": "text/xml;charset=UTF-8"
-                }
-              },
-              "Content-Length": {
-                "schema": {
-                  "type": "integer",
-                  "example": "277"
-                }
-              },
-              "Connection": {
-                "schema": {
-                  "type": "string",
-                  "example": "keep-alive"
-                }
-              },
-              "Content-Encoding": {
-                "schema": {
-                  "type": "string",
-                  "example": "gzip"
-                }
-              },
-              "Expires": {
-                "schema": {
-                  "type": "number",
-                  "example": "-1"
-                }
-              },
-              "Cache-control": {
-                "schema": {
-                  "type": "string",
-                  "example": "no-cache, no-store"
-                }
-              },
-              "X-Powered-By": {
-                "schema": {
-                  "type": "string",
-                  "example": "Undertow 8.0"
-                }
-              },
-              "Set-Cookie": {
-                "schema": {
-                  "type": "string",
-                  "example": "JSESSIONID=HjTOXI92TyfRz8V2xRFCcoI8yf5mbUrSrxbVfLV3.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT"
-                }
-              },
-              "Pragma": {
-                "schema": {
-                  "type": "string",
-                  "example": "no-cache"
-                }
-              },
-              "X-CSRF-Token": {
-                "schema": {
-                  "type": "string",
-                  "example": "75AD80FAB207144044AF45CC9CB1E4A1FF075A62"
-                }
-              },
-              "Strict-Transport-Security": {
-                "schema": {
-                  "type": "string",
-                  "example": "max-age=63072000; includeSubDomains; preload"
-                }
-              },
-              "X-Frame-Options": {
-                "schema": {
-                  "type": "string",
-                  "example": "SAMEORIGIN"
-                }
-              },
-              "X-Content-Type-Options": {
-                "schema": {
-                  "type": "string",
-                  "example": "nosniff"
-                }
-              },
-              "X-XSS-Protection": {
-                "schema": {
-                  "type": "string",
-                  "example": "1; mode=block"
-                }
-              }
-            },
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                },
-                "example": "<?xml version = '1.0' encoding = 'UTF-8'?>\n<response result=\"true\" level=\"0\">\n    <hmdcustomer id=\"17181767951311\"/>\n    <doc type=\"letter_customer\" sender_cust=\"17181767951311\" id=\"FADO11120000050\" class=\"letter\" storage=\"1\" sender_user=\"17313004850561\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1731376331969\"/>\n    <doc type=\"letter_customer\" sender_cust=\"17181767951311\" id=\"FADO11120000050\" class=\"letter\" storage=\"1\" sender_user=\"17313004850561\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1731376332307\" paymentid=\"17313763318771\"/>\n</response>"
-              }
-            }
-          }
-        }
       }
     },
-    "/bifrost/front/j_security_check": {
+    "/bifrost/j_security_check": {
       "post": {
         "tags": [
           "default"
@@ -1091,7 +892,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1103,7 +904,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -1239,7 +1040,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1251,7 +1052,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -1361,7 +1162,7 @@
                     "example": "Bishkek"
                   },
                   "document.field[name=birth_date]": {
-                    "type": "string",
+                    "type": "number",
                     "example": "2003.05.03"
                   }
                 }
@@ -1437,7 +1238,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1449,7 +1250,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -1600,7 +1401,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1612,7 +1413,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -1759,7 +1560,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1771,7 +1572,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -1904,7 +1705,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -1916,7 +1717,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -2118,7 +1919,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -2130,7 +1931,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -2259,7 +2060,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -2271,7 +2072,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
@@ -2435,7 +2236,7 @@
               },
               "Expires": {
                 "schema": {
-                  "type": "number",
+                  "type": "string",
                   "example": "-1"
                 }
               },
@@ -2447,7 +2248,7 @@
               },
               "X-Powered-By": {
                 "schema": {
-                  "type": "string",
+                  "type": "number",
                   "example": "Undertow 8.0"
                 }
               },
