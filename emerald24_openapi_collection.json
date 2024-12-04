@@ -2,15 +2,153 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Emerald24 - API",
-    "version": "1.0.0",
+    "contact": {
+
+    },
     "x-logo": {
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-IdkPkvTqpEnAHO-b6LXSEIWqAkv_L11fA&s",
       "altText": "Emerald24 Logo"
-    }
+    },
+    "version": "1.0",
+    "x-codegen-settings": {
+      "Nullify404": false,
+      "GenerateAsyncCode": true,
+      "UseMethodPrefix": false,
+      "UseModelPostfix": false,
+      "UseControllerPrefix": true,
+      "UseEnumPostfix": true,
+      "CollectParameters": false,
+      "UseConstructorsForConfig": false,
+      "UseCommonSDKLibrary": false,
+      "iOSUseAppInfoPlist": false,
+      "AndroidUseAppManifest": false,
+      "BodySerialization": 0,
+      "EnableAdditionalModelProperties": false,
+      "PreserveParameterOrder": true,
+      "AppendContentHeaders": true,
+      "iOSGenerateCoreData": false,
+      "GenerateInterfaces": false,
+      "NodeHttpClient": "NODE_REQUEST",
+      "ValidateRequiredParameters": false,
+      "JavaUsePropertiesConfig": false,
+      "Timeout": 0,
+      "StoreTimezoneInformation": false,
+      "EnablePHPComposerVersionString": false,
+      "EnableLogging": false,
+      "ArraySerialization": "Indexed",
+      "ModelSerializationScheme": "Json",
+      "UseExceptionPrefix": true,
+      "RunscopeEnabled": false,
+      "AndroidHttpClient": "ANDROID_OK",
+      "ObjCHttpClient": "UNIREST",
+      "CSharpHttpClient": "UNIREST",
+      "PHPHttpClient": "UNIREST",
+      "JavaHttpClient": "JAVA_OK",
+      "ParameterArrayFormat": "ParamArrayWithIndex",
+      "SecurityProtocols": [
+        "Ssl3",
+        "Tls"
+      ],
+      "GenerateTravisConfig": false,
+      "GenerateCircleConfig": false,
+      "GenerateAppveyorConfig": false,
+      "GenerateJenkinsConfig": false,
+      "EnableHttpCache": false,
+      "Retries": 0,
+      "RetryInterval": 1,
+      "GenerateAdvancedDocs": true,
+      "UnderscoreNumbers": true,
+      "UseSingletonPattern": true,
+      "DisableLinting": false,
+      "ApplyCustomizations": [],
+      "SortResources": false,
+      "AllowSkippingSSLCertVerification": false,
+      "DoNotSplitWords": [],
+      "EnableGlobalUserAgent": true,
+      "ReturnCompleteHttpResponse": false,
+      "GenerateModels": true,
+      "GenerateExceptions": true,
+      "IgnoreIfNullJson": false,
+      "DisableDocs": false,
+      "LiftParameterDescriptionFromCustomType": false,
+      "ThrowForHttpErrorStatusCodes": true,
+      "ResponseMapping": {
+        "Type": "Simple"
+      },
+      "ForceKeywordArgsInRuby": false,
+      "SymbolizeHashKeysInRuby": false,
+      "UsageExampleEndpoint": {
+        "Description": "",
+        "EndpointGroupName": "",
+        "EndpointName": ""
+      },
+      "IsLatestVersion": false,
+      "EnableImmutableModels": false,
+      "GenerateEnums": true,
+      "BackoffFactor": 2,
+      "StatusCodesToRetry": [408, 413, 429, 500, 502, 503, 504, 521, 522, 524],
+      "RequestMethodsToRetry": [
+        "GET",
+        "PUT"
+      ],
+      "UserConfigurableRetries": true,
+      "UseEndpointMethodName": false,
+      "EncodeTemplateParameters": true,
+      "GenerateExamplesForOptionalFields": false,
+      "MultitargetDotnetVersions": false,
+      "BackoffMax": 0,
+      "RetryOnTimeout": true,
+      "EnableCookies": false,
+      "EnableJsonPassThroughForAny": false,
+      "PascalCaseEnumForCSharp": false,
+      "PascalCaseEnumForTypeScript": false,
+      "DisableMultipleAuth": false,
+      "AddSingleAuthDeprecatedCode": true,
+      "EnableExperimentalTypeCombinatorGeneration": false,
+      "ErrorTemplates": {
+
+      },
+      "UseSecuritySchemeNameForSingleAuth": false,
+      "EnableModelKeywordArgsInRuby": false,
+      "NullifyEmptyResponses": false,
+      "ExtendedAdditionalPropertiesSupport": false,
+      "EnforceStandardizedCasing": false
+    },
+    "x-server-configuration": {
+      "default-environment": "production",
+      "default-server": "Server 1",
+      "environments": [
+        {
+          "name": "production",
+          "servers": [
+            {
+              "name": "Server 1",
+              "url": "http://example.com"
+            },
+            {
+              "name": "Server 2",
+              "url": "https://emerdevpcore.geniusto.co.uk/bifrost"
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    "x-image-uri": ""
   },
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
   "servers": [
     {
-      "url": "https://emerald24.co.uk"
+      "url": "http://example.com",
+      "variables": {
+
+      }
+    },
+    {
+      "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
+      "variables": {
+
+      }
     }
   ],
   "paths": {
@@ -31,9 +169,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -261,13 +397,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09090000057\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725849917440\" />\r\n  <signer>\r\n    <displayPin>9408</displayPin>\r\n    <reference>17258499175501</reference>\r\n    <expiresIn>180</expiresIn>\r\n    <qrCode>signer.document.commit|9408|17258499175501|180|1725850097550|FADO09090000057</qrCode>\r\n  </signer>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09090000057\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725849917440\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9408\u003C/displayPin\u003E\r\n    \u003Creference\u003E17258499175501\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9408|17258499175501|180|1725850097550|FADO09090000057\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09090000057\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725849917440\" />\r\n  <signer>\r\n    <displayPin>9408</displayPin>\r\n    <reference>17258499175501</reference>\r\n    <expiresIn>180</expiresIn>\r\n    <qrCode>signer.document.commit|9408|17258499175501|180|1725850097550|FADO09090000057</qrCode>\r\n  </signer>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09090000057\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725849917440\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9408\u003C/displayPin\u003E\r\n    \u003Creference\u003E17258499175501\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9408|17258499175501|180|1725850097550|FADO09090000057\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -276,9 +412,66 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/bifrost/midgard/webhooks/partner/payment/document/create",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyNTc5MTQyNjAzNzF9.SLut9ebVEsADz9VSRLFC7GLaZfCP0A7YDddw4PiSSNg",
+                "Content-Type": "application/xml",
+                "Cookie": "JSESSIONID=N56taBO9RdKeKJA5K_akkfakmsaxow8h56AfqV5x.emerdevpcore; path=/bifrost; secure; HttpOnly"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Mon, 09 Sep 2024 02:45:17 GMT",
+                "Content-Length": "338",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=Q6RZgGGCHNVtbmVp8VZv5FEwpsZ4N0Cn6qvf36Z-.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "713475342E54182F0A8964392CADC062B3157A31",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09090000057\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1725849917440\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9408\u003C/displayPin\u003E\r\n    \u003Creference\u003E17258499175501\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9408|17258499175501|180|1725850097550|FADO09090000057\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Payment SAAS (own)"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "post": {
         "tags": [
@@ -296,9 +489,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -331,7 +522,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "customer.id",
@@ -358,9 +551,7 @@
                   "customer.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16395831653381
-                    ]
+                    "examples": [16395831653381]
                   },
                   "document.type": {
                     "type": "string",
@@ -389,16 +580,12 @@
                   "document.field[@name='source_amount']": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      3
-                    ]
+                    "examples": [3]
                   },
                   "document.field[@name='amount']": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      3
-                    ]
+                    "examples": [3]
                   },
                   "document.field[@name='value_date']": {
                     "type": "string",
@@ -430,16 +617,12 @@
                   "customer.hmdcustomerreference.type.BACKOFFICE": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      1115
-                    ]
+                    "examples": [1115]
                   },
                   "user.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16395831651081
-                    ]
+                    "examples": [16395831651081]
                   },
                   "document.field[@name='target_currency']": {
                     "type": "string",
@@ -450,9 +633,7 @@
                   "document.field[@name='target_amount']": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      3
-                    ]
+                    "examples": [3]
                   },
                   "document.field[@name='ben_name']": {
                     "type": "string",
@@ -463,9 +644,7 @@
                   "document.field[name=target_acc]": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      17104797850531
-                    ]
+                    "examples": [17104797850531]
                   }
                 },
                 "contentMediaType": "application/x-www-form-urlencoded"
@@ -669,9 +848,66 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/bifrost/midgard/webhooks/partner/payment/document/create",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyNTg0ODgzNDY4MTF9.bCWskzgQgMH3bQxd6_nWupgc-mUVfQgptM1hP-XF96Y",
+                "Cookie": "JSESSIONID=Q6RZgGGCHNVtbmVp8VZv5FEwpsZ4N0Cn6qvf36Z-.emerdevpcore; path=/bifrost; secure; HttpOnly",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "customer.id=16395831653381&document.type=ACC_TO_ACC_ANY&document.field%5B%40name%3D%27subtype%27%5D=ACC_TO_ACC_OWN&document.field%5B%40name%3D%27currency%27%5D=EUR&document.field%5B%40name%3D%27source_currency%27%5D=EUR&document.field%5B%40name%3D%27source_amount%27%5D=3&document.field%5B%40name%3D%27amount%27%5D=3&document.field%5B%40name%3D%27value_date%27%5D=2024.09.08&document.field%5Bname%3Dsource_acc%5D=GB58EMFG00992100213301&document.field%5B%40name%3D%27ben_acc%27%5D=GB31EMFG00992100213302&document.field%5Bname%3Dinfo_remmitance%5D=test%20partner%20api&customer.hmdcustomerreference.type.BACKOFFICE=002133&user.id=16395831651081&document.field%5B%40name%3D%27target_currency%27%5D=EUR&document.field%5B%40name%3D%27target_amount%27%5D=3&document.field%5B%40name%3D%27ben_name%27%5D=OleNew%20LCC&document.field%5Bname%3Dtarget_acc%5D=17104797850531"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Mon, 09 Sep 2024 11:01:09 GMT",
+                "Content-Length": "283",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=a7QAzMqNDSA5VkQqQxkqODm8H1lJcx55sCy7DkZ2.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "5DE266AB009EC8D213EAA29C6005CD8D0F1C76E8",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "ACC_TO_ACC_OWN (saas)"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -692,9 +928,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -727,7 +961,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.type",
@@ -805,25 +1041,19 @@
                     "type": "integer",
                     "description": "Amount.\n\nAmount in transaction currency.\n\nNumber of characters after the dot must correspond to the dimension of the currency",
                     "contentEncoding": "int32",
-                    "examples": [
-                      6
-                    ]
+                    "examples": [6]
                   },
                   "document.field[name=source_amount]": {
                     "type": "integer",
                     "description": "Source amount.\n\nAmount in transaction currency.\n\nNumber of characters after the dot must correspond to the dimension of the currency",
                     "contentEncoding": "int32",
-                    "examples": [
-                      6
-                    ]
+                    "examples": [6]
                   },
                   "document.field[name=target_amount]": {
                     "type": "integer",
                     "description": "Target amount.\n\nAmount in transaction currency.\n\nNumber of characters after the dot must correspond to the dimension of the currency",
                     "contentEncoding": "int32",
-                    "examples": [
-                      6
-                    ]
+                    "examples": [6]
                   },
                   "document.field[name=value_date]": {
                     "type": "string",
@@ -836,9 +1066,7 @@
                     "type": "integer",
                     "description": "Beneficiary account number",
                     "contentEncoding": "int64",
-                    "examples": [
-                      1180000011111111
-                    ]
+                    "examples": [1180000011111111]
                   },
                   "document.field[name=ben_name]": {
                     "type": "string",
@@ -918,25 +1146,19 @@
                     "type": "integer",
                     "description": "Customer ID. Same as at the customer's structure (hmdcustomer id)\n\nFor payment create, one of the fields must be filled:\n\ncustomer.id or customer.hmdcustomerreference.type.BACKOFFICE",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16395831653381
-                    ]
+                    "examples": [16395831653381]
                   },
                   "customer.hmdcustomerreference.type.BACKOFFICE": {
                     "type": "integer",
                     "description": "Customer backoffice reference.\n\nFor payment create, one of the fields must be filled:\n\ncustomer.id or customer.hmdcustomerreference.type.BACKOFFICE",
                     "contentEncoding": "int32",
-                    "examples": [
-                      1115
-                    ]
+                    "examples": [1115]
                   },
                   "user.id": {
                     "type": "integer",
                     "description": "User ID. Same as at the user's structure (hmduser id)\n\nIf user.id is not specified, the current user will be recorded in the payment (user who makes the request)",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16395831651081
-                    ]
+                    "examples": [16395831651081]
                   },
                   "document.field[name=saas_payment]": {
                     "type": "string",
@@ -1113,13 +1335,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"ACC_TO_ACC_ANY\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111829927\" />\r\n  <doc type=\"ACC_TO_ACC_ANY\" sender_user=\"16303312317041\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1726111830945\" paymentid=\"17261118298281\">\r\n    <field name=\"ben_id\" occ=\"0\" />\r\n    <field name=\"ordering_postalcode\" occ=\"0\" />\r\n  </doc>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111829927\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16303312317041\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1726111830945\" paymentid=\"17261118298281\"\u003E\r\n    \u003Cfield name=\"ben_id\" occ=\"0\" /\u003E\r\n    \u003Cfield name=\"ordering_postalcode\" occ=\"0\" /\u003E\r\n  \u003C/doc\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"ACC_TO_ACC_ANY\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111829927\" />\r\n  <doc type=\"ACC_TO_ACC_ANY\" sender_user=\"16303312317041\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1726111830945\" paymentid=\"17261118298281\">\r\n    <field name=\"ben_id\" occ=\"0\" />\r\n    <field name=\"ordering_postalcode\" occ=\"0\" />\r\n  </doc>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111829927\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16303312317041\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1726111830945\" paymentid=\"17261118298281\"\u003E\r\n    \u003Cfield name=\"ben_id\" occ=\"0\" /\u003E\r\n    \u003Cfield name=\"ordering_postalcode\" occ=\"0\" /\u003E\r\n  \u003C/doc\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -1128,9 +1350,65 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/bifrost/front/payment/create",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyNzIzNzU4MzI2NTF9.F0CEfXMvSyaLAHoz6tCZ4HUzyzw33e9hhw0EP-xN_fs",
+                "Cookie": "JSESSIONID=7tWil0htK19AIatT3e-jqN5ndIwZliVi7aC048ab.emerdevpcore; path=/bifrost; secure; HttpOnly",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "document.type=ACC_TO_ACC_ANY&document.field%5Bname%3Dsubtype%5D=ACC_TO_ACC_INTERNATIONAL&document.field%5Bname%3Dsource_acc%5D=GB58EMFG00992100213301&document.field%5Bname%3Dcurrency%5D=GBP&document.field%5Bname%3Dsource_currency%5D=GBP&document.field%5Bname%3Dtarget_currency%5D=GBP&document.field%5Bname%3Damount%5D=6&document.field%5Bname%3Dsource_amount%5D=6&document.field%5Bname%3Dtarget_amount%5D=6&document.field%5Bname%3Dvalue_date%5D=2024.09.25&document.field%5Bname%3Dben_acc%5D=1180000011111111&document.field%5Bname%3Dben_name%5D=anyName&document.field%5Bname%3Dben_addr%5D=anyAdress&document.field%5Bname%3Dben_city%5D=KG&document.field%5Bname%3Dben_country%5D=KG&document.field%5Bname%3Dben_bank_bic%5D=DEMIKG22XXX&document.field%5Bname%3Dben_bank_name%5D=MASHREQBANK%20PSC.&document.field%5Bname%3Dben_bank_addr%5D=NORTH%20STREET%2015&document.field%5Bname%3Dben_bank_city%5D=KG&document.field%5Bname%3Dben_bank_country%5D=KG&document.field%5Bname%3Dinfo_remmitance%5D=test%20partner%20sepa%20api&customer.id=16395831653381&customer.hmdcustomerreference.type.BACKOFFICE=002133&user.id=16395831651081&document.field%5Bname%3Dsaas_payment%5D=FADO09250000053"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Thu, 12 Sep 2024 03:30:31 GMT",
+                "Content-Length": "339",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-Control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Pragma": "no-cache",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111829927\" /\u003E\r\n  \u003Cdoc type=\"ACC_TO_ACC_ANY\" sender_user=\"16303312317041\" sender_cust=\"16395831653381\" id=\"FADO09120000060\" class=\"payment\" storage=\"1\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1726111830945\" paymentid=\"17261118298281\"\u003E\r\n    \u003Cfield name=\"ben_id\" occ=\"0\" /\u003E\r\n    \u003Cfield name=\"ordering_postalcode\" occ=\"0\" /\u003E\r\n  \u003C/doc\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "ACC_TO_ACC_SWIFT (saas)"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -1151,9 +1429,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -1381,13 +1657,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000059\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111802458\" />\r\n  <signer>\r\n    <displayPin>9134</displayPin>\r\n    <reference>17261118025621</reference>\r\n    <expiresIn>180</expiresIn>\r\n    <qrCode>signer.document.commit|9134|17261118025621|180|1726111982562|FADO09120000059</qrCode>\r\n  </signer>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000059\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111802458\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9134\u003C/displayPin\u003E\r\n    \u003Creference\u003E17261118025621\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9134|17261118025621|180|1726111982562|FADO09120000059\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"16395831653381\" />\r\n  <doc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000059\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111802458\" />\r\n  <signer>\r\n    <displayPin>9134</displayPin>\r\n    <reference>17261118025621</reference>\r\n    <expiresIn>180</expiresIn>\r\n    <qrCode>signer.document.commit|9134|17261118025621|180|1726111982562|FADO09120000059</qrCode>\r\n  </signer>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000059\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111802458\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9134\u003C/displayPin\u003E\r\n    \u003Creference\u003E17261118025621\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9134|17261118025621|180|1726111982562|FADO09120000059\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -1396,9 +1672,66 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/bifrost/midgard/webhooks/partner/payment/document/create]",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyNzEyNzI3NzgzMTF9.c820rtGvW_V0txJcngAulCDY_5bBKOiWwiPCaI-2yeI",
+                "Content-Type": "application/xml",
+                "Cookie": "JSESSIONID=zKdyormzr4kzl-4vTvsoDHbJw0t-CXW8Fz0U8R4n.emerdevpcore; path=/bifrost; secure; HttpOnly"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Thu, 12 Sep 2024 03:30:02 GMT",
+                "Content-Length": "335",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=75UIJaBFlomJCuWRa-rT3hxCSqbVx1VLxbp69sET.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "1327BECA9A547BF20D1EA56235793A82262E2FEB",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"16395831653381\" /\u003E\r\n  \u003Cdoc type=\"SAAS_PAYMENT\" sender_user=\"16395831651081\" sender_cust=\"16395831653381\" id=\"FADO09120000059\" class=\"saas\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1726111802458\" /\u003E\r\n  \u003Csigner\u003E\r\n    \u003CdisplayPin\u003E9134\u003C/displayPin\u003E\r\n    \u003Creference\u003E17261118025621\u003C/reference\u003E\r\n    \u003CexpiresIn\u003E180\u003C/expiresIn\u003E\r\n    \u003CqrCode\u003Esigner.document.commit|9134|17261118025621|180|1726111982562|FADO09120000059\u003C/qrCode\u003E\r\n  \u003C/signer\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Payment SAAS (swift_UAE)"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -1413,7 +1746,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "j_username",
@@ -1443,16 +1778,57 @@
         "responses": {
           "200": {
             "description": "",
-            "headers": {}
+            "headers": {
+
+            }
           }
         },
         "deprecated": false,
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/bifrost/j_security_check",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "j_username=denysenko&j_password=jH%24z8ZDXsa4F53"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+
+              }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Auth"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -1487,9 +1863,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17097039076731
-              ]
+              "examples": [17097039076731]
             }
           },
           {
@@ -1692,13 +2066,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <type>client-secret-reset</type>\r\n  <clientSecret>apFhDCJOQvuQdli7I4Piv84FneEUxkGuRCFNV6sFyHa+7HrCpiVYD4iWlwPLtnd/a/ZbMaveUNAuiwa8AVeMXg==</clientSecret>\r\n  <expiresIn>2592000</expiresIn>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-secret-reset\u003C/type\u003E\r\n  \u003CclientSecret\u003EapFhDCJOQvuQdli7I4Piv84FneEUxkGuRCFNV6sFyHa+7HrCpiVYD4iWlwPLtnd/a/ZbMaveUNAuiwa8AVeMXg==\u003C/clientSecret\u003E\r\n  \u003CexpiresIn\u003E2592000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <type>client-secret-reset</type>\r\n  <clientSecret>apFhDCJOQvuQdli7I4Piv84FneEUxkGuRCFNV6sFyHa+7HrCpiVYD4iWlwPLtnd/a/ZbMaveUNAuiwa8AVeMXg==</clientSecret>\r\n  <expiresIn>2592000</expiresIn>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-secret-reset\u003C/type\u003E\r\n  \u003CclientSecret\u003EapFhDCJOQvuQdli7I4Piv84FneEUxkGuRCFNV6sFyHa+7HrCpiVYD4iWlwPLtnd/a/ZbMaveUNAuiwa8AVeMXg==\u003C/clientSecret\u003E\r\n  \u003CexpiresIn\u003E2592000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -1707,9 +2081,65 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/midgard/webhooks/partner/token/secret/reset",
+              "headers": {
+                "Content-Type": "application/xml",
+                "TPP-Registration-Number": "17097039076731",
+                "TPP-Client-Secret": "DlQbdpLX1S7QhDFqrSEmszIsPw9eJ/GW9JGg1iSLdU3cRHVTqkgRKfjidL4cpj3fwlZjvmexCVEfAxwEtbjtsQ==",
+                "Cookie": "JSESSIONID=0tuIhZtFXLTP8EiQuJLcbnaH06rKalVLPrmncnUP.emerdevpcore; path=/bifrost; secure; HttpOnly"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Wed, 10 Jul 2024 00:56:11 GMT",
+                "Content-Length": "274",
+                "Connection": "keep-alive",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=_NdlmxbPxb1_lszQwcQgnpgEzECkUJLyIqvGgcWv.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "808A26004B5923F387751B266BA3698CFA6218FE",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-secret-reset\u003C/type\u003E\r\n  \u003CclientSecret\u003EapFhDCJOQvuQdli7I4Piv84FneEUxkGuRCFNV6sFyHa+7HrCpiVYD4iWlwPLtnd/a/ZbMaveUNAuiwa8AVeMXg==\u003C/clientSecret\u003E\r\n  \u003CexpiresIn\u003E2592000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Reset Secret Token"
+          }
+        ],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -1744,9 +2174,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17097039076731
-              ]
+              "examples": [17097039076731]
             }
           },
           {
@@ -1949,13 +2377,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <type>client-access-reset</type>\r\n  <accessToken>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyMDU3MzAxMzkwNTF9.orj67ALEkxtgyzv_xmDnWiIs5n2P1LMjDPwh1BvXxIo</accessToken>\r\n  <expiresIn>7776000</expiresIn>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-access-reset\u003C/type\u003E\r\n  \u003CaccessToken\u003EeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyMDU3MzAxMzkwNTF9.orj67ALEkxtgyzv_xmDnWiIs5n2P1LMjDPwh1BvXxIo\u003C/accessToken\u003E\r\n  \u003CexpiresIn\u003E7776000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <type>client-access-reset</type>\r\n  <accessToken>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyMDU3MzAxMzkwNTF9.orj67ALEkxtgyzv_xmDnWiIs5n2P1LMjDPwh1BvXxIo</accessToken>\r\n  <expiresIn>7776000</expiresIn>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-access-reset\u003C/type\u003E\r\n  \u003CaccessToken\u003EeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyMDU3MzAxMzkwNTF9.orj67ALEkxtgyzv_xmDnWiIs5n2P1LMjDPwh1BvXxIo\u003C/accessToken\u003E\r\n  \u003CexpiresIn\u003E7776000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -1964,9 +2392,65 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/midgard/webhooks/partner/token/access/reset",
+              "headers": {
+                "Content-Type": "application/xml",
+                "TPP-Registration-Number": "17097039076731",
+                "TPP-Client-Secret": "NjATPtEb2kwrwIcqaonFQ5l96HOH+cxB5CBpCHm2ogHOfwQDbkSXZO8XyZ0BF6hBOWqgHB+PXFmHf98BHYHjFg==",
+                "Cookie": "JSESSIONID=0tuIhZtFXLTP8EiQuJLcbnaH06rKalVLPrmncnUP.emerdevpcore; path=/bifrost; secure; HttpOnly"
+              }
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Wed, 10 Jul 2024 00:56:53 GMT",
+                "Content-Length": "289",
+                "Connection": "keep-alive",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=_NdlmxbPxb1_lszQwcQgnpgEzECkUJLyIqvGgcWv.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "808A26004B5923F387751B266BA3698CFA6218FE",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Ctype\u003Eclient-access-reset\u003C/type\u003E\r\n  \u003CaccessToken\u003EeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6MTcyMDU3MzAxMzkwNTF9.orj67ALEkxtgyzv_xmDnWiIs5n2P1LMjDPwh1BvXxIo\u003C/accessToken\u003E\r\n  \u003CexpiresIn\u003E7776000\u003C/expiresIn\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Reset Access Token"
+          }
+        ],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -1987,9 +2471,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -2022,7 +2504,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.reference",
@@ -2039,9 +2523,7 @@
                   "document.field[name=partner_id]": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      17096833300941
-                    ]
+                    "examples": [17096833300941]
                   }
                 },
                 "contentMediaType": "application/x-www-form-urlencoded"
@@ -2245,9 +2727,66 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/bifrost/midgard/webhooks/partner/payment/document/search",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "HqVkXIyDJBbQRzo9Mzf+g0UbYymO1vBcPwB/5os30pXfIYozCHTNunMfDKisEB7CVJYUDTbX5C7PfSzIj2w+YA==",
+                "Cookie": "JSESSIONID=VTG0Nikj3jbslQr3DhGs7wCzBrrGYxCj3tXfS0AE.emerdevpcore; path=/bifrost; secure; HttpOnly",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "document.reference=FADO08070000006&document.field%5Bname%3Dpartner_id%5D=17096833300941"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Wed, 07 Aug 2024 00:31:52 GMT",
+                "Content-Length": "1167",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=VTG0Nikj3jbslQr3DhGs7wCzBrrGYxCj3tXfS0AE.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "151B819840C1E2F0F177D5AEF2B088E3D251926E",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              }
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Receive payment structure (in Personal case)"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -2268,9 +2807,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -2303,7 +2840,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.reference"
@@ -2518,9 +3057,23 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -2572,7 +3125,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.id"
@@ -2765,13 +3320,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <doc id=\"HAPN12080000001\" paymentid=\"17020367904741\" type=\"on-boarding\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1702037079939\" />\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc id=\"HAPN12080000001\" paymentid=\"17020367904741\" type=\"on-boarding\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1702037079939\" /\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <doc id=\"HAPN12080000001\" paymentid=\"17020367904741\" type=\"on-boarding\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1702037079939\" />\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc id=\"HAPN12080000001\" paymentid=\"17020367904741\" type=\"on-boarding\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_RECEIVED\" status=\"4\" sync_ts=\"1702037079939\" /\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -2780,9 +3335,23 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     },
@@ -2803,9 +3372,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -2825,7 +3392,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.type",
@@ -2856,16 +3425,12 @@
                   "user.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      17108280986491
-                    ]
+                    "examples": [17108280986491]
                   },
                   "customer.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      17108280986111
-                    ]
+                    "examples": [17108280986111]
                   },
                   "document.field[name=country_of_birth]": {
                     "type": "string",
@@ -2876,9 +3441,7 @@
                   "document.field[name=tax_number]": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      70
-                    ]
+                    "examples": [70]
                   },
                   "document.field[name=tax_country]": {
                     "type": "string",
@@ -2889,9 +3452,7 @@
                   "document.field[name=occupation]": {
                     "type": "integer",
                     "contentEncoding": "int32",
-                    "examples": [
-                      3
-                    ]
+                    "examples": [3]
                   },
                   "document.field[name=is_account_for_business]": {
                     "type": "string",
@@ -2943,9 +3504,7 @@
                   },
                   "document.field[name=us_person][section=risk][type=boolean]": {
                     "type": "boolean",
-                    "examples": [
-                      false
-                    ]
+                    "examples": [false]
                   }
                 },
                 "contentMediaType": "application/x-www-form-urlencoded"
@@ -3116,13 +3675,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"17108193829411\" />\r\n  <doc type=\"questionnaire_private_partner\" sender_user=\"17108193829891\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1710819933442\" />\r\n  <doc type=\"questionnaire_private_partner\" sender_user=\"16303312317041\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1710819933867\" paymentid=\"17108199333131\" />\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"17108193829411\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"17108193829891\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1710819933442\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"16303312317041\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1710819933867\" paymentid=\"17108199333131\" /\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <hmdcustomer id=\"17108193829411\" />\r\n  <doc type=\"questionnaire_private_partner\" sender_user=\"17108193829891\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1710819933442\" />\r\n  <doc type=\"questionnaire_private_partner\" sender_user=\"16303312317041\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1710819933867\" paymentid=\"17108199333131\" />\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"17108193829411\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"17108193829891\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1710819933442\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"16303312317041\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1710819933867\" paymentid=\"17108199333131\" /\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -3131,9 +3690,64 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/front/payment/document/create",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "a3e9VSlIlgTdN3zUEXwoNryYQSVQV48PUGLSYUKZlFNnYc8Ycvl0Nk0kke9wV5+LTMirvSQW4V52rWf6kFgdXg==",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "document.type=questionnaire_private_partner&user.id=17108280986491&customer.id=17108280986111&document.field%5Bname%3Dcountry_of_birth%5D=UA&document.field%5Bname%3Dtax_number%5D=0106&document.field%5Bname%3Dtax_country%5D=UA&document.field%5Bname%3Doccupation%5D=3&document.field%5Bname%3Dis_account_for_business%5D=N&document.field%5Bname%3Dsource_of_income%5D=salary&document.field%5Bname%3Dis_pep%5D=N&document.field%5Bname%3Dis_sole_account_owner%5D=Y&document.field%5Bname%3Dcitizenship%5D=UA&document.field%5Bname%3Dconfirm_tax%5D=UA&document.field%5Bname%3Dconfirm_citizenship%5D=UA&document.field%5Bname%3Dpersonal_account%5D=yes&document.field%5Bname%3Dus_person%5D%5Bsection%3Drisk%5D%5Btype%3Dboolean%5D=false"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Tue, 19 Mar 2024 03:45:33 GMT",
+                "Content-Length": "304",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-Control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Pragma": "no-cache",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Chmdcustomer id=\"17108193829411\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"17108193829891\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1710819933442\" /\u003E\r\n  \u003Cdoc type=\"questionnaire_private_partner\" sender_user=\"16303312317041\" sender_cust=\"17108193829411\" id=\"FADO03190000036\" class=\"application\" storage=\"1\" state=\"PSI_SR_CONFIRMATION\" status=\"4\" sync_ts=\"1710819933867\" paymentid=\"17108199333131\" /\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Questionnaire Private"
+          }
+        ],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -3154,9 +3768,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17097039076731
-              ]
+              "examples": [17097039076731]
             }
           },
           {
@@ -3189,7 +3801,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.type",
@@ -3207,9 +3821,7 @@
                   "document.field[name=partner_id]": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      17096833300941
-                    ]
+                    "examples": [17096833300941]
                   },
                   "document.field[name=phone_number]": {
                     "type": "string",
@@ -3397,13 +4009,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <doc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722898914213\" />\r\n  <doc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_COMPLETED\" status=\"5\" sync_ts=\"1722898915251\" paymentid=\"17228989140321\" />\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722898914213\" /\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_COMPLETED\" status=\"5\" sync_ts=\"1722898915251\" paymentid=\"17228989140321\" /\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <doc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722898914213\" />\r\n  <doc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_COMPLETED\" status=\"5\" sync_ts=\"1722898915251\" paymentid=\"17228989140321\" />\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722898914213\" /\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_COMPLETED\" status=\"5\" sync_ts=\"1722898915251\" paymentid=\"17228989140321\" /\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -3412,9 +4024,66 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/midgard/webhooks/partner/payment/document/create",
+              "headers": {
+                "TPP-Registration-Number": "17097039076731",
+                "TPP-Client-Access": "0gMGfYpofCQxSL4VQ1396FxGyGekyiXFgdj5n2cglrqbcp8KEG0F5d1WcxsY3IxY1iXmzIVvvQaB5RfagkQTww==",
+                "Cookie": "JSESSIONID=hj_rbVyh3NzVYHTGbWkbJQTh-T_u2FmpkQ8rQffK.emerdevpcore; path=/bifrost; secure; HttpOnly",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "document.type=phone_ratification_partner&document.field%5Bname%3Dpartner_id%5D=17096833300941&document.field%5Bname%3Dphone_number%5D=%2B380983110107"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Mon, 05 Aug 2024 23:01:55 GMT",
+                "Content-Length": "457",
+                "Connection": "keep-alive",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=hj_rbVyh3NzVYHTGbWkbJQTh-T_u2FmpkQ8rQffK.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "36EE51845C7068E1C31C8A998D83F16E33114262",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722898914213\" /\u003E\r\n  \u003Cdoc type=\"phone_ratification_partner\" id=\"FADO08060000003\" class=\"application\" storage=\"2\" sender_user=\"SYSTEM\" state=\"PSI_COMPLETED\" status=\"5\" sync_ts=\"1722898915251\" paymentid=\"17228989140321\" /\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Phone_ratify (in Business case)"
+          }
+        ],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -3435,9 +4104,7 @@
             "schema": {
               "type": "integer",
               "contentEncoding": "int64",
-              "examples": [
-                17096833300941
-              ]
+              "examples": [17096833300941]
             }
           },
           {
@@ -3470,7 +4137,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "document.id"
@@ -3663,13 +4332,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"0\">\r\n  <doc id=\"HAPO08060000002\" paymentid=\"17228991835151\" type=\"on-boarding_legal\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722899425076\" />\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc id=\"HAPO08060000002\" paymentid=\"17228991835151\" type=\"on-boarding_legal\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722899425076\" /\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"0\">\r\n  <doc id=\"HAPO08060000002\" paymentid=\"17228991835151\" type=\"on-boarding_legal\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722899425076\" />\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc id=\"HAPO08060000002\" paymentid=\"17228991835151\" type=\"on-boarding_legal\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722899425076\" /\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -3678,9 +4347,66 @@
         "servers": [
           {
             "url": "https://emerdevpcore.geniusto.co.uk/bifrost",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/midgard/webhooks/partner/payment/document/commit",
+              "headers": {
+                "TPP-Registration-Number": "17096833300941",
+                "TPP-Client-Access": "0gMGfYpofCQxSL4VQ1396FxGyGekyiXFgdj5n2cglrqbcp8KEG0F5d1WcxsY3IxY1iXmzIVvvQaB5RfagkQTww==",
+                "Cookie": "JSESSIONID=hj_rbVyh3NzVYHTGbWkbJQTh-T_u2FmpkQ8rQffK.emerdevpcore; path=/bifrost; secure; HttpOnly",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "document.id=HAPO08060000002"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Mon, 05 Aug 2024 23:10:25 GMT",
+                "Content-Length": "277",
+                "Connection": "keep-alive",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=hj_rbVyh3NzVYHTGbWkbJQTh-T_u2FmpkQ8rQffK.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "36EE51845C7068E1C31C8A998D83F16E33114262",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"0\"\u003E\r\n  \u003Cdoc id=\"HAPO08060000002\" paymentid=\"17228991835151\" type=\"on-boarding_legal\" class=\"application\" storage=\"1\" sender_user=\"SYSTEM\" state=\"PSI_REGISTERED\" status=\"1\" sync_ts=\"1722899425076\" /\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Commit SDK Onfido (in Business case)"
+          }
+        ],
+        "x-server-name": "Server 2"
       },
       "parameters": []
     },
@@ -3736,7 +4462,9 @@
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
-              "encoding": {},
+              "encoding": {
+
+              },
               "schema": {
                 "required": [
                   "service.type",
@@ -3756,23 +4484,17 @@
                   "service.version": {
                     "type": "number",
                     "contentEncoding": "double",
-                    "examples": [
-                      1.4
-                    ]
+                    "examples": [1.4]
                   },
                   "systeminfo.user.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16535439857111
-                    ]
+                    "examples": [16535439857111]
                   },
                   "systeminfo.customer.id": {
                     "type": "integer",
                     "contentEncoding": "int64",
-                    "examples": [
-                      16533721030201
-                    ]
+                    "examples": [16533721030201]
                   },
                   "user.new.token.type": {
                     "type": "string",
@@ -3971,13 +4693,13 @@
                         "wrapped": false
                       },
                       "examples": [
-                        "<response result=\"true\" level=\"100\">\r\n  <data type=\"reset\">\r\n    <token type=\"srpqrcode\">\r\n      <field name=\"qrcode\" />\r\n    </token>\r\n  </data>\r\n  <sessionmessage>\r\n    <systeminfo scoped=\"temporary\">\r\n      <date type=\"current\" time=\"1699338021274\" />\r\n      <date type=\"create\" time=\"1699338021113\" />\r\n    </systeminfo>\r\n    <hmduser id=\"16535439857111\" />\r\n    <hmdcustomer id=\"16533721030201\" />\r\n    <partner id=\"16920052652661\" />\r\n    <level auth=\"100\" down=\"-1\" />\r\n    <hmdtokenlist>\r\n      <hmdtoken type=\"heimdall\" />\r\n      <hmdtoken type=\"srpqrcode\" />\r\n    </hmdtokenlist>\r\n    <attributelist>\r\n      <attribute name=\"channel\" />\r\n      <attribute name=\"usertype\" />\r\n      <attribute name=\"customertype\" />\r\n      <attribute name=\"customersimilar\" />\r\n    </attributelist>\r\n  </sessionmessage>\r\n</response>"
+                        "\u003Cresponse result=\"true\" level=\"100\"\u003E\r\n  \u003Cdata type=\"reset\"\u003E\r\n    \u003Ctoken type=\"srpqrcode\"\u003E\r\n      \u003Cfield name=\"qrcode\" /\u003E\r\n    \u003C/token\u003E\r\n  \u003C/data\u003E\r\n  \u003Csessionmessage\u003E\r\n    \u003Csysteminfo scoped=\"temporary\"\u003E\r\n      \u003Cdate type=\"current\" time=\"1699338021274\" /\u003E\r\n      \u003Cdate type=\"create\" time=\"1699338021113\" /\u003E\r\n    \u003C/systeminfo\u003E\r\n    \u003Chmduser id=\"16535439857111\" /\u003E\r\n    \u003Chmdcustomer id=\"16533721030201\" /\u003E\r\n    \u003Cpartner id=\"16920052652661\" /\u003E\r\n    \u003Clevel auth=\"100\" down=\"-1\" /\u003E\r\n    \u003Chmdtokenlist\u003E\r\n      \u003Chmdtoken type=\"heimdall\" /\u003E\r\n      \u003Chmdtoken type=\"srpqrcode\" /\u003E\r\n    \u003C/hmdtokenlist\u003E\r\n    \u003Cattributelist\u003E\r\n      \u003Cattribute name=\"channel\" /\u003E\r\n      \u003Cattribute name=\"usertype\" /\u003E\r\n      \u003Cattribute name=\"customertype\" /\u003E\r\n      \u003Cattribute name=\"customersimilar\" /\u003E\r\n    \u003C/attributelist\u003E\r\n  \u003C/sessionmessage\u003E\r\n\u003C/response\u003E"
                       ]
                     }
                   ],
                   "contentMediaType": "text/xml;charset=UTF-8"
                 },
-                "example": "<response result=\"true\" level=\"100\">\r\n  <data type=\"reset\">\r\n    <token type=\"srpqrcode\">\r\n      <field name=\"qrcode\" />\r\n    </token>\r\n  </data>\r\n  <sessionmessage>\r\n    <systeminfo scoped=\"temporary\">\r\n      <date type=\"current\" time=\"1699338021274\" />\r\n      <date type=\"create\" time=\"1699338021113\" />\r\n    </systeminfo>\r\n    <hmduser id=\"16535439857111\" />\r\n    <hmdcustomer id=\"16533721030201\" />\r\n    <partner id=\"16920052652661\" />\r\n    <level auth=\"100\" down=\"-1\" />\r\n    <hmdtokenlist>\r\n      <hmdtoken type=\"heimdall\" />\r\n      <hmdtoken type=\"srpqrcode\" />\r\n    </hmdtokenlist>\r\n    <attributelist>\r\n      <attribute name=\"channel\" />\r\n      <attribute name=\"usertype\" />\r\n      <attribute name=\"customertype\" />\r\n      <attribute name=\"customersimilar\" />\r\n    </attributelist>\r\n  </sessionmessage>\r\n</response>"
+                "example": "\u003Cresponse result=\"true\" level=\"100\"\u003E\r\n  \u003Cdata type=\"reset\"\u003E\r\n    \u003Ctoken type=\"srpqrcode\"\u003E\r\n      \u003Cfield name=\"qrcode\" /\u003E\r\n    \u003C/token\u003E\r\n  \u003C/data\u003E\r\n  \u003Csessionmessage\u003E\r\n    \u003Csysteminfo scoped=\"temporary\"\u003E\r\n      \u003Cdate type=\"current\" time=\"1699338021274\" /\u003E\r\n      \u003Cdate type=\"create\" time=\"1699338021113\" /\u003E\r\n    \u003C/systeminfo\u003E\r\n    \u003Chmduser id=\"16535439857111\" /\u003E\r\n    \u003Chmdcustomer id=\"16533721030201\" /\u003E\r\n    \u003Cpartner id=\"16920052652661\" /\u003E\r\n    \u003Clevel auth=\"100\" down=\"-1\" /\u003E\r\n    \u003Chmdtokenlist\u003E\r\n      \u003Chmdtoken type=\"heimdall\" /\u003E\r\n      \u003Chmdtoken type=\"srpqrcode\" /\u003E\r\n    \u003C/hmdtokenlist\u003E\r\n    \u003Cattributelist\u003E\r\n      \u003Cattribute name=\"channel\" /\u003E\r\n      \u003Cattribute name=\"usertype\" /\u003E\r\n      \u003Cattribute name=\"customertype\" /\u003E\r\n      \u003Cattribute name=\"customersimilar\" /\u003E\r\n    \u003C/attributelist\u003E\r\n  \u003C/sessionmessage\u003E\r\n\u003C/response\u003E"
               }
             }
           }
@@ -3986,9 +4708,66 @@
         "servers": [
           {
             "url": "http://example.com",
-            "variables": {}
+            "variables": {
+
+            }
           }
-        ]
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false,
+          "ErrorTemplates": {
+
+          },
+          "SkipAdditionalHeaders": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/bifrost/midgard/webhooks/partner/front/service/midgard",
+              "headers": {
+                "TPP-Registration-Number": "{{customer_id}}",
+                "TPP-Client-Access": "uuRak6gR0j4A2gB/Di8Gl+NML2WtChoIwwBxSEIQCkbN76WNHF18Tg+DCvrJ9SFbRjfmsyv4SbX5J/efLe10VQ==",
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "service.type=service.authentication.token.password.reset&service.version=1.4&systeminfo.user.id=16535439857111&systeminfo.customer.id=16533721030201&user.new.token.type=srpqrcode"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "statusCode": "200",
+              "headers": {
+                "Content-Type": "text/xml;charset=UTF-8",
+                "Server": "nginx",
+                "Date": "Tue, 07 Nov 2023 06:20:21 GMT",
+                "Content-Length": "550",
+                "Connection": "keep-alive",
+                "Content-Encoding": "gzip",
+                "Expires": "-1",
+                "Cache-control": "no-cache, no-store",
+                "X-Powered-By": "Undertow 8.0",
+                "Set-Cookie": "JSESSIONID=2Nozrv34s3SlBVqZYmmRMuBfo-fUcKhMjazrKLcY.emerdevpcore; path=/bifrost/midgard/webhooks/partner; secure; HttpOnly; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:00 GMT",
+                "Pragma": "no-cache",
+                "X-CSRF-Token": "8C52FE61DB396FB8A1C23208898EEBB37E31D3F2",
+                "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+                "X-Frame-Options": "SAMEORIGIN",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block"
+              },
+              "body": "\u003Cresponse result=\"true\" level=\"100\"\u003E\r\n  \u003Cdata type=\"reset\"\u003E\r\n    \u003Ctoken type=\"srpqrcode\"\u003E\r\n      \u003Cfield name=\"qrcode\" /\u003E\r\n    \u003C/token\u003E\r\n  \u003C/data\u003E\r\n  \u003Csessionmessage\u003E\r\n    \u003Csysteminfo scoped=\"temporary\"\u003E\r\n      \u003Cdate type=\"current\" time=\"1699338021274\" /\u003E\r\n      \u003Cdate type=\"create\" time=\"1699338021113\" /\u003E\r\n    \u003C/systeminfo\u003E\r\n    \u003Chmduser id=\"16535439857111\" /\u003E\r\n    \u003Chmdcustomer id=\"16533721030201\" /\u003E\r\n    \u003Cpartner id=\"16920052652661\" /\u003E\r\n    \u003Clevel auth=\"100\" down=\"-1\" /\u003E\r\n    \u003Chmdtokenlist\u003E\r\n      \u003Chmdtoken type=\"heimdall\" /\u003E\r\n      \u003Chmdtoken type=\"srpqrcode\" /\u003E\r\n    \u003C/hmdtokenlist\u003E\r\n    \u003Cattributelist\u003E\r\n      \u003Cattribute name=\"channel\" /\u003E\r\n      \u003Cattribute name=\"usertype\" /\u003E\r\n      \u003Cattribute name=\"customertype\" /\u003E\r\n      \u003Cattribute name=\"customersimilar\" /\u003E\r\n    \u003C/attributelist\u003E\r\n  \u003C/sessionmessage\u003E\r\n\u003C/response\u003E"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "QR code for Partner Midgard"
+          }
+        ],
+        "x-server-name": "Server 1"
       },
       "parameters": []
     }
